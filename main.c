@@ -22,7 +22,7 @@
 #endif
 
 
-int main(int argc, const char * argv[]) {
+int main() {
     Abb *arbol = creaAbbVacio();
     arbol = insertaValorAbb(arbol,5);
     arbol = insertaValorAbb(arbol,8);

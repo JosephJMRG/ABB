@@ -1,0 +1,7 @@
+digraph abb5
+ {
+5 -> 3 [label="hi"]
+5 -> 8 [label="hd"]
+8 -> 7 [label="hi"]
+8 -> 9 [label="hd"]
+}

@@ -6,19 +6,6 @@
 //  Copyright © 2018 Mauro San Martín. All rights reserved.
 //
 
-#ifndef stdio_h
-#include <stdio.h>
-#define stdio_h
-#endif
-
-#ifndef stdlib_h
-#include <stdlib.h>
-#define stdlib_h
-#endif
-
-#ifndef abb_h
-#define abb_h
-#endif /* abb_h */
 
 typedef struct _nodo{
     int dato;
