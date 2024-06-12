@@ -147,7 +147,7 @@ int buscarMinAbb(Abb *arbol) {
     while (actual->hizq != NULL)
     {
         actual = actual->hizq;
-        printf("%i", actual->hizq);
+        printf("%i", actual);
     }
     
     return actual->dato;
@@ -165,7 +165,7 @@ int buscarMaxAbb(Abb *arbol) {
     while (actual->hder != NULL)
     {
         actual = actual->hder;
-        printf("%i", actual->hder);
+        printf("%i", actual);
     }
     
     return actual->dato;
