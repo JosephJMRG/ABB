@@ -19,7 +19,6 @@ typedef Nodo Abb;
 /* 
 Abb *creaAbbVacio();
 int esAbbVacio(Abb *arbol);
-int esAbbVacio(Abb *arbol);
 int buscaValorAbb(Abb *arbol, int valor);
 int buscaValorRutaAbb(Abb *arbol, int valor);
 Abb *insertaValorAbb(Abb *arbol, int valor);

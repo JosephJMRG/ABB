@@ -16,6 +16,11 @@
 #define stdlib_h
 #endif
 
+#ifndef time_h
+#include <time.h>
+#define time_h
+#endif
+
 #ifndef abb_h
 #include "abb.h"
 #define abb_h
@@ -43,6 +48,19 @@ int main() {
     buscaValorRutaAbb(arbol, 10);
     printf("\n");
 
+    srand(time(NULL));
+
+    int tamanio;
+    printf("Ingrese el tamaño del árbol: ");
+    scanf("%d", &tamanio);
+    
+    // Crear árbol con valores aleatorios
+    for (int i = 0; i < tamanio; i++) {
+        int valor = rand() % 100; // Valores aleatorios entre 0 y 99
+        arbol = insertaValorAbb(arbol, valor);
+        printf("Insertado: %d\n", valor);
+    }
+    muestraArbolGV(arbol, "Abb", tamanio);
     buscarMinAbb(arbol);
     buscarMaxAbb(arbol);
 
