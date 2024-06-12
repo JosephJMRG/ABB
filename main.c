@@ -43,5 +43,7 @@ int main() {
     buscaValorRutaAbb(arbol, 10);
     printf("\n");
 
+    buscarMinAbb(arbol);
+
     return 0;
 }

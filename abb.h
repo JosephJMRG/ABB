@@ -15,6 +15,26 @@ typedef struct _nodo{
 typedef Nodo Abb;
 
 
+// Declaración de funciones
+/* 
+Abb *creaAbbVacio();
+int esAbbVacio(Abb *arbol);
+int esAbbVacio(Abb *arbol);
+int buscaValorAbb(Abb *arbol, int valor);
+int buscaValorRutaAbb(Abb *arbol, int valor);
+Abb *insertaValorAbb(Abb *arbol, int valor);
+Abb *eliminaValorAbb(Abb *arbol, int valor);
+int buscarMinAbb(Abb *arbol);
+// Buscar MAX
+void recorreAbbEnOrden(Abb *arbol);
+void eliminaAbb(Abb *arbol);
+Abb *leeArchivoEnABB(const char *nombreArchivoDatos);
+int escribeAbbEnOrden(Abb *arbol, FILE *archivo);
+int generaArchivoOrdenado(Abb *arbol, const char *nombreArchivoOrdenado);
+int recorreArbolGV(Abb *arbol, FILE *archivo);
+void muestraArbolGV(Abb *arbol, char *tipo, int tamano);
+*/
+
 Abb *creaAbbVacio(){
     return(NULL);
 }
@@ -116,7 +136,40 @@ Abb *eliminaValorAbb(Abb *arbol, int valor){
 }
 
 //busca min
+int buscarMinAbb(Abb *arbol) {
+    // Verificar árbol vacío
+    if (arbol == NULL)
+    {
+        printf("Árbol vacío°\n");
+    }
+    
+    Abb *actual = arbol;
+    while (actual->hizq != NULL)
+    {
+        actual = actual->hizq;
+        printf("%i", actual->hizq);
+    }
+    
+    return actual->dato;
+}
+/* Necesito crear la lógica para buscarMinAbb && buscaMaxnAbb, lee estor acrhivos y usa las deficiones de los archivos, usa sólo lo de aquí */
 //busca max
+int buscarMaxAbb(Abb *arbol) {
+    // Verificar árbol vacío
+    if (arbol == NULL)
+    {
+        printf("Árbol vacío°\n");
+    }
+    
+    Abb *actual = arbol;
+    while (actual->hder != NULL)
+    {
+        actual = actual->hder;
+        printf("%i", actual->hder);
+    }
+    
+    return actual->dato;
+}
 
 //recorre en orden
 void recorreAbbEnOrden(Abb *arbol){
