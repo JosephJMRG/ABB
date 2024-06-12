@@ -44,6 +44,7 @@ int main() {
     printf("\n");
 
     buscarMinAbb(arbol);
+    buscarMaxAbb(arbol);
 
     return 0;
 }

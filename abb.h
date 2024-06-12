@@ -137,37 +137,34 @@ Abb *eliminaValorAbb(Abb *arbol, int valor){
 
 //busca min
 int buscarMinAbb(Abb *arbol) {
-    // Verificar árbol vacío
-    if (arbol == NULL)
-    {
-        printf("Árbol vacío°\n");
+    // Verificar si el árbol está vacío
+    if (arbol == NULL) {
+        printf("Árbol vacío\n");
+        return -1; // Retornar un valor indicativo de error, depende de la implementación
     }
     
     Abb *actual = arbol;
-    while (actual->hizq != NULL)
-    {
+    while (actual->hizq != NULL) {
         actual = actual->hizq;
-        printf("%i", actual);
     }
     
+    printf("Valor mínimo: %i\n", actual->dato);
     return actual->dato;
 }
-/* Necesito crear la lógica para buscarMinAbb && buscaMaxnAbb, lee estor acrhivos y usa las deficiones de los archivos, usa sólo lo de aquí */
-//busca max
+
 int buscarMaxAbb(Abb *arbol) {
-    // Verificar árbol vacío
-    if (arbol == NULL)
-    {
-        printf("Árbol vacío°\n");
+    // Verificar si el árbol está vacío
+    if (arbol == NULL) {
+        printf("Árbol vacío\n");
+        return -1; // Retornar un valor indicativo de error, depende de la implementación
     }
     
     Abb *actual = arbol;
-    while (actual->hder != NULL)
-    {
+    while (actual->hder != NULL) {
         actual = actual->hder;
-        printf("%i", actual);
     }
     
+    printf("Valor máximo: %i\n", actual->dato);
     return actual->dato;
 }
 
