@@ -27,16 +27,21 @@
 #endif
 
 
+
+
 int main() {
+
     Abb *arbol = creaAbbVacio();
+    /*
     arbol = insertaValorAbb(arbol,5);
     arbol = insertaValorAbb(arbol,8);
     arbol = insertaValorAbb(arbol,3);
     arbol = insertaValorAbb(arbol,9);
     arbol = insertaValorAbb(arbol,7);
+    */
     
-    recorreAbbEnOrden(arbol);
     
+    /* 
     muestraArbolGV(arbol, "abb", 5);
     
     buscaValorRutaAbb(arbol, 3);
@@ -46,7 +51,7 @@ int main() {
     buscaValorRutaAbb(arbol, 7);
     printf("\n");
     buscaValorRutaAbb(arbol, 10);
-    printf("\n");
+    printf("\n"); */
 
     srand(time(NULL));
 
@@ -60,6 +65,7 @@ int main() {
         arbol = insertaValorAbb(arbol, valor);
         printf("Insertado: %d\n", valor);
     }
+    recorreAbbEnOrden(arbol);
     muestraArbolGV(arbol, "Abb", tamanio);
     buscarMinAbb(arbol);
     buscarMaxAbb(arbol);
